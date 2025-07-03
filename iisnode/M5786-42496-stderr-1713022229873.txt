@@ -1,0 +1,151 @@
+(node:42496) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+warn  - Invalid next.config.js options detected: 
+  - The value at .images.remotePatterns[0].port must be 1 character or more but it was 0 characters.
+
+See more info here: https://nextjs.org/docs/messages/invalid-next-config
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+Warning: For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'yarn add sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+Failed to write image to cache oQ-jdlx2TwutVFNfn+0xN2il9EpqGD4eDPfKfhM1qzk= [Error: EPERM: operation not permitted, open 'D:\inetpub\vhosts\zazaaccessories.com\httpdocs\.next\cache\images\oQ-jdlx2TwutVFNfn+0xN2il9EpqGD4eDPfKfhM1qzk=\60.1713022296501.I4mhyFr1d8JvadpqOJBSZ7B7Ge4PcKa8ePrTea7I4WI=.webp'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'D:\\inetpub\\vhosts\\zazaaccessories.com\\httpdocs\\.next\\cache\\images\\oQ-jdlx2TwutVFNfn+0xN2il9EpqGD4eDPfKfhM1qzk=\\60.1713022296501.I4mhyFr1d8JvadpqOJBSZ7B7Ge4PcKa8ePrTea7I4WI=.webp'
+}
+Failed to write image to cache oQ-jdlx2TwutVFNfn+0xN2il9EpqGD4eDPfKfhM1qzk= [Error: EPERM: operation not permitted, open 'D:\inetpub\vhosts\zazaaccessories.com\httpdocs\.next\cache\images\oQ-jdlx2TwutVFNfn+0xN2il9EpqGD4eDPfKfhM1qzk=\60.1713022423354.I4mhyFr1d8JvadpqOJBSZ7B7Ge4PcKa8ePrTea7I4WI=.webp'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'D:\\inetpub\\vhosts\\zazaaccessories.com\\httpdocs\\.next\\cache\\images\\oQ-jdlx2TwutVFNfn+0xN2il9EpqGD4eDPfKfhM1qzk=\\60.1713022423354.I4mhyFr1d8JvadpqOJBSZ7B7Ge4PcKa8ePrTea7I4WI=.webp'
+}
+Failed to write image to cache oQ-jdlx2TwutVFNfn+0xN2il9EpqGD4eDPfKfhM1qzk= [Error: EPERM: operation not permitted, open 'D:\inetpub\vhosts\zazaaccessories.com\httpdocs\.next\cache\images\oQ-jdlx2TwutVFNfn+0xN2il9EpqGD4eDPfKfhM1qzk=\60.1713022508310.I4mhyFr1d8JvadpqOJBSZ7B7Ge4PcKa8ePrTea7I4WI=.webp'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'D:\\inetpub\\vhosts\\zazaaccessories.com\\httpdocs\\.next\\cache\\images\\oQ-jdlx2TwutVFNfn+0xN2il9EpqGD4eDPfKfhM1qzk=\\60.1713022508310.I4mhyFr1d8JvadpqOJBSZ7B7Ge4PcKa8ePrTea7I4WI=.webp'
+}
+TypeError: Failed to parse URL from /Services/PrivacyPolicy?langID=1
+    at Object.fetch (node:internal/deps/undici/undici:11372:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getServerSideProps (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\.next\server\pages\privacy.js:86:17)
+    at async Object.renderToHTML (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\render.js:508:20)
+    at async doRender (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\base-server.js:687:38)
+    at async cacheEntry.responseCache.get.isManualRevalidate.isManualRevalidate (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\base-server.js:796:28)
+    at async D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\response-cache\index.js:80:36 {
+  [cause]: TypeError [ERR_INVALID_URL]: Invalid URL
+      at new NodeError (node:internal/errors:405:5)
+      at new URL (node:internal/url:637:13)
+      at new _Request (node:internal/deps/undici/undici:5055:25)
+      at fetch2 (node:internal/deps/undici/undici:9195:25)
+      at Object.fetch (node:internal/deps/undici/undici:11370:18)
+      at fetch (node:internal/process/pre_execution:242:25)
+      at getServerSideProps (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\.next\server\pages\privacy.js:86:23)
+      at Object.renderToHTML (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\render.js:508:26)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async doRender (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\base-server.js:687:38) {
+    input: '/Services/PrivacyPolicy?langID=1',
+    code: 'ERR_INVALID_URL'
+  }
+}
+TypeError: Failed to parse URL from /Services/PrivacyPolicy?langID=1
+    at Object.fetch (node:internal/deps/undici/undici:11372:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getServerSideProps (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\.next\server\pages\privacy.js:86:17)
+    at async Object.renderToHTML (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\render.js:508:20)
+    at async doRender (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\base-server.js:687:38)
+    at async cacheEntry.responseCache.get.isManualRevalidate.isManualRevalidate (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\base-server.js:796:28)
+    at async D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\response-cache\index.js:80:36 {
+  [cause]: TypeError [ERR_INVALID_URL]: Invalid URL
+      at new NodeError (node:internal/errors:405:5)
+      at new URL (node:internal/url:637:13)
+      at new _Request (node:internal/deps/undici/undici:5055:25)
+      at fetch2 (node:internal/deps/undici/undici:9195:25)
+      at Object.fetch (node:internal/deps/undici/undici:11370:18)
+      at fetch (node:internal/process/pre_execution:242:25)
+      at getServerSideProps (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\.next\server\pages\privacy.js:86:23)
+      at Object.renderToHTML (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\render.js:508:26)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async doRender (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\base-server.js:687:38) {
+    input: '/Services/PrivacyPolicy?langID=1',
+    code: 'ERR_INVALID_URL'
+  }
+}
+TypeError: Failed to parse URL from /Services/PrivacyPolicy?langID=1
+    at Object.fetch (node:internal/deps/undici/undici:11372:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getServerSideProps (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\.next\server\pages\privacy.js:86:17)
+    at async Object.renderToHTML (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\render.js:508:20)
+    at async doRender (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\base-server.js:687:38)
+    at async cacheEntry.responseCache.get.isManualRevalidate.isManualRevalidate (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\base-server.js:796:28)
+    at async D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\response-cache\index.js:80:36 {
+  [cause]: TypeError [ERR_INVALID_URL]: Invalid URL
+      at new NodeError (node:internal/errors:405:5)
+      at new URL (node:internal/url:637:13)
+      at new _Request (node:internal/deps/undici/undici:5055:25)
+      at fetch2 (node:internal/deps/undici/undici:9195:25)
+      at Object.fetch (node:internal/deps/undici/undici:11370:18)
+      at fetch (node:internal/process/pre_execution:242:25)
+      at getServerSideProps (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\.next\server\pages\privacy.js:86:23)
+      at Object.renderToHTML (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\render.js:508:26)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async doRender (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\base-server.js:687:38) {
+    input: '/Services/PrivacyPolicy?langID=1',
+    code: 'ERR_INVALID_URL'
+  }
+}
+TypeError: Failed to parse URL from /Services/TermsandConditions?langID=1
+    at Object.fetch (node:internal/deps/undici/undici:11372:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getServerSideProps (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\.next\server\pages\terms.js:86:17)
+    at async Object.renderToHTML (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\render.js:508:20)
+    at async doRender (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\base-server.js:687:38)
+    at async cacheEntry.responseCache.get.isManualRevalidate.isManualRevalidate (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\base-server.js:796:28)
+    at async D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\response-cache\index.js:80:36 {
+  [cause]: TypeError [ERR_INVALID_URL]: Invalid URL
+      at new NodeError (node:internal/errors:405:5)
+      at new URL (node:internal/url:637:13)
+      at new _Request (node:internal/deps/undici/undici:5055:25)
+      at fetch2 (node:internal/deps/undici/undici:9195:25)
+      at Object.fetch (node:internal/deps/undici/undici:11370:18)
+      at fetch (node:internal/process/pre_execution:242:25)
+      at getServerSideProps (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\.next\server\pages\terms.js:86:23)
+      at Object.renderToHTML (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\render.js:508:26)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async doRender (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\base-server.js:687:38) {
+    input: '/Services/TermsandConditions?langID=1',
+    code: 'ERR_INVALID_URL'
+  }
+}
+TypeError: Failed to parse URL from /Services/TermsandConditions?langID=1
+    at Object.fetch (node:internal/deps/undici/undici:11372:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async getServerSideProps (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\.next\server\pages\terms.js:86:17)
+    at async Object.renderToHTML (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\render.js:508:20)
+    at async doRender (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\base-server.js:687:38)
+    at async cacheEntry.responseCache.get.isManualRevalidate.isManualRevalidate (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\base-server.js:796:28)
+    at async D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\response-cache\index.js:80:36 {
+  [cause]: TypeError [ERR_INVALID_URL]: Invalid URL
+      at new NodeError (node:internal/errors:405:5)
+      at new URL (node:internal/url:637:13)
+      at new _Request (node:internal/deps/undici/undici:5055:25)
+      at fetch2 (node:internal/deps/undici/undici:9195:25)
+      at Object.fetch (node:internal/deps/undici/undici:11370:18)
+      at fetch (node:internal/process/pre_execution:242:25)
+      at getServerSideProps (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\.next\server\pages\terms.js:86:23)
+      at Object.renderToHTML (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\render.js:508:26)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async doRender (D:\inetpub\vhosts\zazaaccessories.com\httpdocs\node_modules\next\dist\server\base-server.js:687:38) {
+    input: '/Services/TermsandConditions?langID=1',
+    code: 'ERR_INVALID_URL'
+  }
+}
+Failed to write image to cache oQ-jdlx2TwutVFNfn+0xN2il9EpqGD4eDPfKfhM1qzk= [Error: EPERM: operation not permitted, open 'D:\inetpub\vhosts\zazaaccessories.com\httpdocs\.next\cache\images\oQ-jdlx2TwutVFNfn+0xN2il9EpqGD4eDPfKfhM1qzk=\60.1713022833526.I4mhyFr1d8JvadpqOJBSZ7B7Ge4PcKa8ePrTea7I4WI=.webp'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'D:\\inetpub\\vhosts\\zazaaccessories.com\\httpdocs\\.next\\cache\\images\\oQ-jdlx2TwutVFNfn+0xN2il9EpqGD4eDPfKfhM1qzk=\\60.1713022833526.I4mhyFr1d8JvadpqOJBSZ7B7Ge4PcKa8ePrTea7I4WI=.webp'
+}

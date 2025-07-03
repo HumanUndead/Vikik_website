@@ -1,0 +1,18 @@
+(node:40320) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+warn  - Invalid next.config.js options detected: 
+  - The value at .images.remotePatterns[0].port must be 1 character or more but it was 0 characters.
+
+See more info here: https://nextjs.org/docs/messages/invalid-next-config
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+Warning: For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'yarn add sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+Failed to write image to cache oQ-jdlx2TwutVFNfn+0xN2il9EpqGD4eDPfKfhM1qzk= [Error: EPERM: operation not permitted, open 'D:\inetpub\vhosts\zazaaccessories.com\httpdocs\.next\cache\images\oQ-jdlx2TwutVFNfn+0xN2il9EpqGD4eDPfKfhM1qzk=\60.1712689394795.I4mhyFr1d8JvadpqOJBSZ7B7Ge4PcKa8ePrTea7I4WI=.webp'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'D:\\inetpub\\vhosts\\zazaaccessories.com\\httpdocs\\.next\\cache\\images\\oQ-jdlx2TwutVFNfn+0xN2il9EpqGD4eDPfKfhM1qzk=\\60.1712689394795.I4mhyFr1d8JvadpqOJBSZ7B7Ge4PcKa8ePrTea7I4WI=.webp'
+}

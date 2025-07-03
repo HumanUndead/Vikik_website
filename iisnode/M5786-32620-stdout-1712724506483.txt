@@ -1,0 +1,2 @@
+info  - Loaded env from D:\inetpub\vhosts\zazaaccessories.com\httpdocs\.env
+> Ready on http://localhost:3000

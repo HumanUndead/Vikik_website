@@ -1,0 +1,24 @@
+(node:95208) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+warn  - Invalid next.config.js options detected: 
+  - The value at .images.remotePatterns[0].port must be 1 character or more but it was 0 characters.
+
+See more info here: https://nextjs.org/docs/messages/invalid-next-config
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+Warning: For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'yarn add sharp', and Next.js will use it automatically for Image Optimization.
+Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+Failed to write image to cache Q-lC9jHR+oRb9XLY64g7LXfcnP+aSgKVUumZ7WBY+Zk= [Error: EPERM: operation not permitted, open 'D:\inetpub\vhosts\zazaaccessories.com\httpdocs\.next\cache\images\Q-lC9jHR+oRb9XLY64g7LXfcnP+aSgKVUumZ7WBY+Zk=\60.1712584913002.Oil4PFKjHKn3vvIWPRR6pMlEBBORYV-hD0yhux2AKOc=.webp'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'D:\\inetpub\\vhosts\\zazaaccessories.com\\httpdocs\\.next\\cache\\images\\Q-lC9jHR+oRb9XLY64g7LXfcnP+aSgKVUumZ7WBY+Zk=\\60.1712584913002.Oil4PFKjHKn3vvIWPRR6pMlEBBORYV-hD0yhux2AKOc=.webp'
+}
+Failed to write image to cache Q-lC9jHR+oRb9XLY64g7LXfcnP+aSgKVUumZ7WBY+Zk= [Error: EPERM: operation not permitted, open 'D:\inetpub\vhosts\zazaaccessories.com\httpdocs\.next\cache\images\Q-lC9jHR+oRb9XLY64g7LXfcnP+aSgKVUumZ7WBY+Zk=\60.1712585012270.Oil4PFKjHKn3vvIWPRR6pMlEBBORYV-hD0yhux2AKOc=.webp'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'D:\\inetpub\\vhosts\\zazaaccessories.com\\httpdocs\\.next\\cache\\images\\Q-lC9jHR+oRb9XLY64g7LXfcnP+aSgKVUumZ7WBY+Zk=\\60.1712585012270.Oil4PFKjHKn3vvIWPRR6pMlEBBORYV-hD0yhux2AKOc=.webp'
+}

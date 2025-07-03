@@ -1,0 +1,10 @@
+(node:57128) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+warn  - Invalid next.config.js options detected: 
+  - The value at .images.remotePatterns[0].port must be 1 character or more but it was 0 characters.
+
+See more info here: https://nextjs.org/docs/messages/invalid-next-config
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
