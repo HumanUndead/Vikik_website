@@ -61,5 +61,8 @@
   "coupon-required": "كود الخصم مطلوب",
   "merge-account-message": "هل تريد دمج حسابك القديم مع حسابك الجديد لاستعادة نقاطك القديمة؟",
   "merge": "دمج",
-  "cancel": "إلغاء"
+  "cancel": "إلغاء",
+  "methodDelivery-required": "طريقة التوصيل مطلوبة",
+  "country-required": "الدولة مطلوبة",
+  "city-required": "المدينة مطلوبة"
 }

@@ -20,7 +20,7 @@ const Logo: React.FC<React.AnchorHTMLAttributes<{}>> = ({
         width={103}
         layout="fixed"
         loading="eager"
-        className=" !min-h-[38px] !min-w-[86px] md:!h-[45px] md:!w-[103px] ltr:!left-[-20px] rtl:!right-[-20px] ltr:md:!left-0 rtl:md:!right-0"
+        className=" !min-h-[38px] !min-w-[86px] md:!h-[50px] md:!w-[200px] ltr:!left-[-20px] rtl:!right-[-20px] ltr:md:!left-0 rtl:md:!right-0"
         unoptimized
       />
     </Link>

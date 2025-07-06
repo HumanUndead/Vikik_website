@@ -35,7 +35,6 @@ const AddressUser: React.FC<addressProps> = ({ address, cities }) => {
     country: selectedAddress?.country || "",
     city: selectedAddress?.city || "",
     phone: selectedAddress?.phone1 || "",
-    postal: selectedAddress?.postal || "",
   };
 
   const {
@@ -49,7 +48,7 @@ const AddressUser: React.FC<addressProps> = ({ address, cities }) => {
 
   const notify = () =>
     toast.success(t("common:update-success"), {
-      position: "bottom-right",
+      position: "top-right",
       className: "!bg-white",
     });
 
@@ -79,7 +78,6 @@ const AddressUser: React.FC<addressProps> = ({ address, cities }) => {
       country: "",
       city: "",
       phone: "",
-      postal: "",
     });
     setSelectedAddress(null);
   };
@@ -165,14 +163,27 @@ const AddressUser: React.FC<addressProps> = ({ address, cities }) => {
               errorKey={errors?.name?.message}
             />
 
-            <Input
-              labelKey="forms:label-country"
-              {...register("country", {
-                required: "forms:country-required",
-              })}
-              variant="solid"
-              errorKey={errors?.country?.message}
-            />
+            <div className="block w-full">
+              <label className="block text-gray-600 font-semibold text-sm leading-none mb-3 cursor-pointer">
+                {t("forms:label-country")}
+              </label>
+              <select
+                {...register("country", {
+                  required: "forms:country-required",
+                })}
+                className="py-2 px-4 md:px-5 w-full appearance-none transition duration-150 ease-in-out border text-input text-xs lg:text-sm font-body placeholder-body min-h-12 bg-white border-gray-300 focus:outline-none focus:border-heading h-11 md:h-12 rounded-md !text-gray-700"
+              >
+                <option value="" disabled hidden>
+                  {t("common:select-label")}
+                </option>
+                <option value="Jordan">{t("common:Jordan")}</option>
+              </select>
+              {errors?.country?.message && (
+                <span className="text-red-500 text-xs">
+                  {t(errors.country.message)}
+                </span>
+              )}
+            </div>
 
             <div className="block w-full">
               <label className="block text-gray-600 font-semibold text-sm leading-none mb-3 cursor-pointer">
@@ -185,26 +196,21 @@ const AddressUser: React.FC<addressProps> = ({ address, cities }) => {
                 className="py-2 px-4 md:px-5 w-full appearance-none transition duration-150 ease-in-out border text-input text-xs lg:text-sm font-body placeholder-body min-h-12  bg-white border-gray-300 focus:outline-none focus:border-heading h-11 md:h-12 rounded-md !text-gray-700"
               >
                 {errors.city?.message}
-                <option value="">Select a city</option>
+                <option value="" disabled hidden>
+                  {t("common:select-label")}
+                </option>
                 {cities.map((city) => (
                   <option key={city.ID} value={city.ID}>
                     {city?.Name}
                   </option>
                 ))}
               </select>
+              {errors?.city?.message && (
+                <span className="text-red-500 text-xs">
+                  {t(errors.city.message)}
+                </span>
+              )}
             </div>
-            <Input
-              labelKey="forms:label-postal-code"
-              {...register("postal", {
-                required: "forms:postal-code-required",
-                pattern: {
-                  value: /^[0-9]{5}(?:-[0-9]{4})?$/,
-                  message: "forms:postal-code-invalid",
-                },
-              })}
-              variant="solid"
-              errorKey={errors?.postal?.message}
-            />
           </div>
 
           <div className="relative flex gap-3">

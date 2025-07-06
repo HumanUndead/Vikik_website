@@ -75,7 +75,7 @@ export const UpdateUserInf = async (
   gender: string,
   dob: string,
   email: string,
-  langId: string ,
+  langId: string,
   isRegister: boolean
 ) => {
   try {
@@ -88,18 +88,14 @@ export const UpdateUserInf = async (
   }
 };
 
-
-
-
 export const MergeUser = async (oldId: string, newId: string) => {
   try {
     const response = await apiClient().post(
-      `Vikik/MergeUser?oldId=${oldId}&newId=${newId}
-`    );
+      `Vikik/MergeUser?oldId=${oldId}&newId=${newId}  
+`
+    );
     return response.data;
   } catch (error) {
     console.error("Error creating account:", error);
   }
-};  
-
-
+};

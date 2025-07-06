@@ -28,14 +28,11 @@ export default function ProductPopup() {
 
   const lang = useLanguageCode();
 
-  const { data: product, isLoading } = useQuery({
-    queryKey: ["product", data?.ID, lang],
-    queryFn: () => GetProductDetails(data?.ID, lang),
+  const { data: product } = useQuery({
+    queryKey: ["product", data.ID, lang],
+    queryFn: () => GetProductDetails(data.ID, lang),
     staleTime: Infinity,
-    enabled: !!data?.ID, // prevent the query from running if ID is undefined
   });
-
-  console.log(product);
 
   const router = useRouter();
   const { addItemToCart } = useCart();
@@ -45,10 +42,10 @@ export default function ProductPopup() {
   const [addToCartLoader, setAddToCartLoader] = useState<boolean>(false);
   const [selectedColor, setSelectedColor] = useState<Product | null>(null);
   const [selectedSize, setSelectedSize] = useState<Product | null>(null);
-  const [productSelected, setProductSelected] = useState<any>(null);
+  const [productSelected, setProductSelected] = useState<any>(product);
 
   useEffect(() => {
-    if (product?.length) {
+    if (product) {
       setProductSelected(product.product);
     }
   }, [product]);
@@ -98,8 +95,6 @@ export default function ProductPopup() {
   const isExsist = exisisProductInWishlistts(productSelected?.ID);
   const colorMap = ColorsAndSizesProduct(product?.sizes);
 
-  console.log(first);
-
   return (
     <>
       <div
@@ -107,7 +102,7 @@ export default function ProductPopup() {
           productSelected ? "" : "md:w-[650px] lg:w-[960px]"
         }`}
       >
-        {productSelected || isLoading ? (
+        {productSelected ? (
           <div className="flex flex-col lg:flex-row w-full md:w-[650px] lg:w-[960px] mx-auto overflow-hidden">
             <div className=" relative flex-shrink-0 flex items-center justify-center w-full lg:w-430px max-h-430px lg:max-h-full overflow-hidden bg-gray-300">
               <Image

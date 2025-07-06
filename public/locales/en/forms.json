@@ -61,5 +61,8 @@
   "coupon-required": "Coupon code is required",
   "merge-account-message": "Do you want to merge your old account with your new one to get back your old points?",
   "merge": "Merge",
-  "cancel": "Cancel"
+  "cancel": "Cancel",
+  "methodDelivery-required": "Delivery method is required",
+  "country-required": "Country is required",
+  "city-required": "City is required"
 }

@@ -20,26 +20,12 @@ export default function Layout({ children }: React.PropsWithChildren<{}>) {
         ]}
         title="Vikik"
         description="Fastest E-commerce template built with React, NextJS, TypeScript, @tanstack/react-query and Tailwind CSS."
-        canonical="https://Vikike.vercel.app/"
+        canonical="https://vikikfashion.com/assets/images/logo-vikik.png"
         openGraph={{
-          url: "https://Vikike.vercel.app",
+          url: "https://vikikfashion.com/assets/images/logo-vikik.png",
           title: "Vikike React - React Next E-commerce Template",
           description:
             "Fastest E-commerce template built with React, NextJS, TypeScript, @tanstack/react-query and Tailwind CSS.",
-          images: [
-            {
-              url: "/assets/images/og-image-01.png",
-              width: 800,
-              height: 600,
-              alt: "Og Image Alt",
-            },
-            {
-              url: "/assets/images/",
-              width: 900,
-              height: 800,
-              alt: "Og Image Alt Second",
-            },
-          ],
         }}
       />
       {paymentPage ? "" : <Header home={isHomePage} />}

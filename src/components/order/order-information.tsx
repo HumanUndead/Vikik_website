@@ -28,7 +28,7 @@ export default function OrderInformation({ orderId }: any) {
 
   const lang = useLanguageCode();
   const { t } = useTranslation("common");
-  console.log(order);
+
   return (
     <div className="xl:px-32 2xl:px-44 3xl:px-56 py-16 lg:py-20">
       <div className="border border-gray-300 bg-gray-50 px-4 lg:px-5 py-4 rounded-md flex items-center justify-start text-heading text-sm md:text-base mb-6 lg:mb-8">
@@ -73,9 +73,7 @@ export default function OrderInformation({ orderId }: any) {
           <span className="uppercase text-[11px] block text-body font-normal leading-5">
             {t("text-payment-method")}:
           </span>
-          {order?.MyDeliveryMethod == 1
-            ? t(methodDelivery[0].Name)
-            : t(methodDelivery[1].Name)}
+          {t(methodDelivery[0].Name)}
         </li>
       </ul>
 
