@@ -17,7 +17,7 @@ const CheckoutCard: React.FC = () => {
     currencyCode: code,
   });
   const { price: texts } = usePrice({
-    amount: Number(text.Value),
+    amount: Number(text.Value) || 0,
     currencyCode: code,
   });
   const { price: totalAll } = usePrice({

@@ -59,7 +59,7 @@ const Widgets: React.FC<WidgetsProps> = ({ widgets }) => {
           />
         ))}
         <div className=" w-full  overflow-hidden h-[224px] ">
-          <Accordion type="single" collapsible defaultValue="item-1">
+          <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger>{data?.Label}</AccordionTrigger>
               <AccordionContent>
