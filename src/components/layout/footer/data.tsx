@@ -19,12 +19,12 @@ export const footer = {
           path: "https://www.instagram.com/vikikfashion/?hl=en",
           icon: <IoLogoInstagram />,
         },
-        {
-          id: 2,
-          title: "link-twitter",
-          path: "#",
-          icon: <IoLogoTwitter />,
-        },
+        // {
+        //   id: 2,
+        //   title: "link-twitter",
+        //   path: "#",
+        //   icon: <IoLogoTwitter />,
+        // },
         {
           id: 3,
           title: "link-facebook",

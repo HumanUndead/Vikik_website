@@ -26,7 +26,7 @@ export default function OurBranches({ ourBranches, articles }: any) {
               </Element>
             </div>
           </div>
-          <GeolocationModal articles={articles} />
+          {/* <GeolocationModal articles={articles} /> */}
         </Container>
       </div>
     </>
@@ -38,8 +38,8 @@ OurBranches.Layout = Layout;
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const lang = getLocaleId(locale);
   const ourBranches = await GetPages("10015", lang);
+
   const gitArticle = await GetArticle(lang, "20023");
-  console.log(gitArticle);
 
   return {
     props: {

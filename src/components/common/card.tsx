@@ -45,7 +45,11 @@ const Card: React.FC<Props> = ({
       >
         <div className="flex w-full md:h-[460px] 2xl:h-[600px]">
           <Image
-            src={process.env.NEXT_PUBLIC_BASE_API_URL + FullImagePath + ".jpg"}
+            src={
+              process.env.NEXT_PUBLIC_BASE_API_URL +
+              FullImagePath +
+              "_450X530.webp"
+            }
             alt={name || t("text-card-thumbnail")}
             width={600}
             height={900}

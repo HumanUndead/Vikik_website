@@ -46,6 +46,7 @@ const WidgetLink: FC<Props> = ({ className, data }) => {
                   </span>
                 )}
                 <Link
+                  style={{ unicodeBidi: "bidi-override" }}
                   href={list.path ? list.path : "#!"}
                   className="transition-colors duration-200 hover:text-black"
                 >

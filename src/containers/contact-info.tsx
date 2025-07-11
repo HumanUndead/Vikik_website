@@ -11,32 +11,32 @@ const data = [
     slug: "/",
     icon: <IoLocationSharp />,
     name: "text-address",
-    description: "text-address-details",
+    title: "+96279060 0487",
   },
   {
     id: 2,
     slug: "/",
     icon: <IoMail />,
     name: "text-email",
-    description: "text-email-details",
+    title: "+96279060 0487",
   },
   {
     id: 3,
     slug: "/",
     icon: <IoCallSharp />,
     name: "text-phone",
-    description: "text-phone-details",
+    title: "info@vikikfashion.com",
   },
 ];
 interface Props {
   image?: HTMLImageElement;
 }
 const ContactInfoBlock: FC<Props> = () => {
-  const { t } = useTranslation("common");
+  const { t } = useTranslation();
   return (
     <div className="mb-6 lg:border lg:rounded-md border-gray-300 lg:p-7">
       <h4 className="text-2xl md:text-lg font-bold text-heading pb-7 md:pb-10 lg:pb-6 -mt-1">
-        {t("text-find-us-here")}
+        {t("common:text-find-us-here")}
       </h4>
       {data?.map((item: any) => (
         <div key={`contact--key${item?.id}`} className="flex pb-7">
@@ -45,11 +45,14 @@ const ContactInfoBlock: FC<Props> = () => {
           </div>
           <div className="flex flex-col ltr:pl-3 rtl:pr-3 ltr:2xl:pl-4 rtl:2xl:pr-4">
             <h5 className="text-sm font-bold text-heading">
-              {t(`${item?.name}`)}
+              {t(`common:${item?.name}`)}
             </h5>
-            <Link href={item?.slug} className="text-sm mt-0">
-              {t(`${item?.description}`)}
-            </Link>
+            <span
+              style={{ unicodeBidi: "bidi-override" }}
+              className="text-sm mt-0"
+            >
+              {t(`${item?.title}`)}
+            </span>
           </div>
         </div>
       ))}
