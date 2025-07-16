@@ -1,9 +1,5 @@
-import { ILFlag } from "@components/icons/ILFlag";
 import { SAFlag } from "@components/icons/SAFlag";
-import { CNFlag } from "@components/icons/CNFlag";
 import { USFlag } from "@components/icons/USFlag";
-import { DEFlag } from "@components/icons/DEFlag";
-import { ESFlag } from "@components/icons/ESFlag";
 import Nike from "public/assets/images/brands/megamenu/nike.png";
 import Dior from "public/assets/images/brands/megamenu/dior.png";
 import Gucci from "public/assets/images/brands/megamenu/gucci.png";
@@ -24,23 +20,22 @@ import { SunglassIcon } from "@components/icons/sunglass-icon";
 import { SneakerIcon } from "@components/icons/sneaker-icon";
 
 export const siteSettings = {
-  name: "Vikike",
-  description:
-    "Fastest E-commerce template built with React, NextJS, TypeScript, @tanstack/react-query and Tailwind CSS.",
+  name: "Vikik",
+  description: "https://vikikfashion.com",
   author: {
     name: "REDQ",
     websiteUrl: "https://redq.io",
     address: "",
   },
   logo: {
-    url: "/assets/images/logo.svg",
-    alt: "Vikike",
+    url: "/assets/images/logo-vikik.png",
+    alt: "Vikik",
     href: "/",
     width: 95,
     height: 30,
   },
   defaultLanguage: "en",
-  currencyCode: "USD",
+  currencyCode: "JOD",
   site_header: {
     menu: [
       {

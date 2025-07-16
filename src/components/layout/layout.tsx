@@ -20,12 +20,11 @@ export default function Layout({ children }: React.PropsWithChildren<{}>) {
         ]}
         title="Vikik"
         description="https://vikikfashion.com"
-        canonical="https://vikikfashion.com/assets/images/logo-vikik.png"
+        canonical="/assets/images/logo-vikik.png"
         openGraph={{
           url: "https://vikikfashion.com/assets/images/logo-vikik.png",
           title: "https://vikikfashion.com",
-          description:
-            "Fastest E-commerce template built with React, NextJS, TypeScript, @tanstack/react-query and Tailwind CSS.",
+          description: "https://vikikfashion.com",
         }}
       />
       {paymentPage ? "" : <Header home={isHomePage} />}
