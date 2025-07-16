@@ -5,19 +5,21 @@ import { ManagedUIContext } from "@contexts/ui.context";
 import ManagedModal from "@components/common/modal/managed-modal";
 import ManagedDrawer from "@components/common/drawer/managed-drawer";
 import { useEffect, useRef } from "react";
-import { QueryClient, QueryClientProvider, HydrationBoundary } from "@tanstack/react-query";
+import {
+  QueryClient,
+  QueryClientProvider,
+  HydrationBoundary,
+} from "@tanstack/react-query";
 import { ToastContainer } from "react-toastify";
-// import { ReactQueryDevtools } from "@tanstack/react-query/devtools";
+
 import { appWithTranslation } from "next-i18next";
 import { DefaultSeo } from "@components/common/default-seo";
 
-// Load Open Sans and satisfy typeface font
 import "@fontsource/open-sans";
 import "@fontsource/open-sans/600.css";
 import "@fontsource/open-sans/700.css";
 import "@fontsource/satisfy";
 
-// base css file
 import "@styles/scrollbar.css";
 import "@styles/swiper-carousel.css";
 import "@styles/custom-plugins.css";

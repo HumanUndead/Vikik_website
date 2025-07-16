@@ -11,21 +11,21 @@ const data = [
     slug: "/",
     icon: <IoLocationSharp />,
     name: "text-address",
-    title: "+96279060 0487",
+    title: "Jordan",
   },
   {
     id: 2,
     slug: "/",
     icon: <IoMail />,
     name: "text-email",
-    title: "+96279060 0487",
+    title: "info@vikikfashion.com",
   },
   {
     id: 3,
     slug: "/",
     icon: <IoCallSharp />,
     name: "text-phone",
-    title: "info@vikikfashion.com",
+    title: "+96279060 0487",
   },
 ];
 interface Props {

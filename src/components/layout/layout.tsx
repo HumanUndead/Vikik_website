@@ -19,11 +19,11 @@ export default function Layout({ children }: React.PropsWithChildren<{}>) {
           },
         ]}
         title="Vikik"
-        description="Fastest E-commerce template built with React, NextJS, TypeScript, @tanstack/react-query and Tailwind CSS."
+        description="https://vikikfashion.com"
         canonical="https://vikikfashion.com/assets/images/logo-vikik.png"
         openGraph={{
           url: "https://vikikfashion.com/assets/images/logo-vikik.png",
-          title: "Vikike React - React Next E-commerce Template",
+          title: "https://vikikfashion.com",
           description:
             "Fastest E-commerce template built with React, NextJS, TypeScript, @tanstack/react-query and Tailwind CSS.",
         }}

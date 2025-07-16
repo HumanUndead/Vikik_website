@@ -66,8 +66,6 @@ export const getServerSideProps: GetServerSideProps = async (props) => {
   const localeId = getLocaleId(locale);
   const page = query.page;
 
-  console.log(query);
-
   const getCategory = await GetProductsCategory(
     props.query.category as string,
     localeId,

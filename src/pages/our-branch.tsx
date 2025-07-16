@@ -3,12 +3,11 @@ import Container from "@components/ui/container";
 import PageHeader from "@components/ui/page-header";
 import { Element } from "react-scroll";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { GetArticle, GetPages } from "src/api/routs";
+import { GetPages } from "src/api/routs";
 import { getLocaleId } from "@utils/locale-mapping";
-import { GetStaticProps } from "next";
-import GeolocationModal from "@components/common/Map";
+import { GetServerSideProps } from "next";
 
-export default function OurBranches({ ourBranches, articles }: any) {
+export default function OurBranches({ ourBranches }: any) {
   return (
     <>
       <PageHeader pageHeader={ourBranches.Label} />
@@ -35,11 +34,9 @@ export default function OurBranches({ ourBranches, articles }: any) {
 
 OurBranches.Layout = Layout;
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
+export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
   const lang = getLocaleId(locale);
   const ourBranches = await GetPages("10015", lang);
-
-  const gitArticle = await GetArticle(lang, "20023");
 
   return {
     props: {
@@ -51,7 +48,6 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
         "footer",
       ])),
       ourBranches: ourBranches,
-      articles: gitArticle.Articles,
     },
   };
 };
