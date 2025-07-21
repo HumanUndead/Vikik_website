@@ -4,6 +4,7 @@ import { useTranslation } from "next-i18next";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import cn from "classnames";
 import Link from "@components/ui/link";
+import Image from "next/image";
 
 interface CopyrightProps {
   payment?: {
@@ -34,14 +35,19 @@ const Copyright: React.FC<CopyrightProps> = ({ payment, variant }) => {
             "p-0 m-0": variant === "contemporary",
           })}
         >
-          {t("text-copyright")} &copy; {year}&nbsp;
+          Powerd BY &nbsp;
+          <Image
+            src="/assets/images/ken.png"
+            alt="ken"
+            width={130}
+            height={130}
+            priority
+            className="object-contain inline-block"
+          />
           <a
             className="font-semibold text-gray-700 transition-colors duration-200 ease-in-out hover:text-body"
             href={siteSettings.author.websiteUrl}
-          >
-            {siteSettings.author.name}
-          </a>
-          &nbsp; {t("text-all-rights-reserved")}
+          ></a>
         </p>
 
         {payment && (
