@@ -38,7 +38,6 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = "", data }) => {
     }
   }, [data?.products]);
 
-  const totalPages = Math.ceil(data?.pages / 20);
   return (
     <>
       <div
@@ -57,7 +56,7 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = "", data }) => {
         )}
       </div>
       <div className="text-center pt-8 xl:pt-14">
-        {pageSize < totalPages && (
+        {pageSize <= data.pages && (
           <Button
             variant="slim"
             onClick={() => {
