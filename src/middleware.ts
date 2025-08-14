@@ -7,7 +7,6 @@ export function middleware(request: NextRequest) {
   const isEnPath = pathname.startsWith("/en");
   const userId = request.cookies.get("userId")?.value;
 
-
   const basePath = isArPath ? "/ar" : isEnPath ? "/en" : "";
 
   if (pathname.startsWith(`${basePath}/login`) && userId) {

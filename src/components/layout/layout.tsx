@@ -9,6 +9,7 @@ export default function Layout({ children }: React.PropsWithChildren<{}>) {
   const router = useRouter();
   const isHomePage = router.pathname == "/";
   const paymentPage = router.pathname == "/confirmPayment";
+  const importer = router.pathname == "/importer";
   return (
     <div className="flex flex-col min-h-screen">
       <NextSeo
@@ -27,7 +28,7 @@ export default function Layout({ children }: React.PropsWithChildren<{}>) {
           description: "https://vikikfashion.com",
         }}
       />
-      {paymentPage ? "" : <Header home={isHomePage} />}
+      {paymentPage || importer ? "" : <Header home={isHomePage} />}
       <main
         className="relative flex-grow"
         style={{
@@ -37,7 +38,7 @@ export default function Layout({ children }: React.PropsWithChildren<{}>) {
       >
         {children}
       </main>
-      {paymentPage ? "" : <Footer />}
+      {paymentPage || importer ? "" : <Footer />}
       <MobileNavigation />
       <Search />
     </div>

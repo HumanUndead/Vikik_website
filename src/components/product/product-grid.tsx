@@ -56,9 +56,10 @@ export const ProductGrid: FC<ProductGridProps> = ({ className = "", data }) => {
         )}
       </div>
       <div className="text-center pt-8 xl:pt-14">
-        {pageSize <= data.pages && (
+        {pageSize < data.pages && (
           <Button
             variant="slim"
+            q
             onClick={() => {
               setLoad(true);
               router.replace(

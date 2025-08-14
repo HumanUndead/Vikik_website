@@ -238,5 +238,7 @@
   "color": "اللون",
   "sizes": "المقاسات",
   "category": "الفئة",
-  "Jordan": "الأردن"
+  "Jordan": "الأردن",
+  "please-fill-cart": "يرجى ملء السلة",
+  "please-login": "يرجى تسجيل الدخول"
 }

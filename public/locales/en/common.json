@@ -240,5 +240,7 @@
   "color": "Color",
   "sizes": "Sizes",
   "category": "Category",
-  "Jordan": "Jordan"
+  "Jordan": "Jordan",
+  "please-fill-cart": "Please Fill Cart",
+  "please-login": "Please sign in"
 }
